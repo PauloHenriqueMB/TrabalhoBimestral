@@ -1,5 +1,6 @@
 package br.anotacoes;
 
-public class Coluna {
-
+public @interface Coluna {
+	String nome() default "";
+	boolean pk() default false;
 }
